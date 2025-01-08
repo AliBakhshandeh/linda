@@ -1,21 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "react-spring-bottom-sheet/dist/style.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --app-width: 460px;
+  --background: #fff;
+  --foreground: rgb(50, 50, 50);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
+  background-color: var(--background);
 }
-
 body {
   color: var(--foreground);
-  background: var(--background);
+  height: 100%;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+[data-rsbs-overlay],
+[data-rsbs-backdrop] {
+  max-width: var(--app-width);
+  margin: auto;
 }
