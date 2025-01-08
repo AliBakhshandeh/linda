@@ -1,3 +1,10 @@
+## Run Project on Localhost
+
+1. Clone the project
+2. Run `yarn install`
+3. Run `yarn dev`
+4. Open `http://localhost:3000\wallet` in your browser
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
